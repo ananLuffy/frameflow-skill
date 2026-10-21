@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "project_id": "paper-kite-demo",
+  "mode": "plan",
+  "author_id": "demo-author",
+  "artifacts": [
+    {
+      "id": "story",
+      "path": "assets/story.txt",
+      "sha256": "cc3fd49244113889e36d83fc02f188e4eabe97cde7031664683cceef34ffa163",
+      "dependencies": []
+    }
+  ],
+  "actions": [
+    {
+      "id": "draft-brief",
+      "kind": "brief",
+      "artifact_ids": [
+        "story"
+      ],
+      "status": "pending",
+      "evidence": null,
+      "scope_sha256": null
+    },
+    {
+      "id": "draft-story",
+      "kind": "story",
+      "artifact_ids": [
+        "story"
+      ],
+      "status": "pending",
+      "evidence": null,
+      "scope_sha256": null
+    },
+    {
+      "id": "draft-director",
+      "kind": "director",
+      "artifact_ids": [
+        "story"
+      ],
+      "status": "pending",
+      "evidence": null,
+      "scope_sha256": null
+    }
+  ],
+  "reviews": []
+}

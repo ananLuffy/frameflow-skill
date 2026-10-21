@@ -1,0 +1,97 @@
+{
+  "format": 1,
+  "status": "prepared-for-release-mit",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 40,
+      "sha256": "a9c0a548403be39f57e9806e11d182a0800abd12872f073c43d6d2af1d68bd9c"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 847,
+      "sha256": "0d501d59c4d4d14093f6af81ce939dde34ae40994d5515a87b309d885b43dcc0"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1085,
+      "sha256": "c256bfc6c3ae4382ebf485a0041d3c477a00e7bb783ae7c9c30bec5f849d7305"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4121,
+      "sha256": "c2ec1d8b78ffca20833dbd5076777018d921c4d33ce2283fe422d068873909fc"
+    },
+    {
+      "path": "RELEASE.md",
+      "bytes": 1201,
+      "sha256": "7a8fd46aab208b1f15c678bd254590036457015d79d3964fcac5cf37d7f28b87"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 1139,
+      "sha256": "b094aaf2d039117f8f75174b6dda278f6c5f524c4bfa812375c5067a5381854b"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 8913,
+      "sha256": "ef217d575983e27ccc09315e4da556790eabb69db531b9d03a4e928df19d8665"
+    },
+    {
+      "path": "docs/adapters.md",
+      "bytes": 3393,
+      "sha256": "572e50347a018b4f8c1d90c46632561a9c74176252f5fbbdb2f3eaf8050652d8"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 2912,
+      "sha256": "b48f43df589835cc6b151d1bfe392fafef568a3bb24b501b742e84fd4c28f875"
+    },
+    {
+      "path": "examples/demo/assets/story.txt",
+      "bytes": 166,
+      "sha256": "cc3fd49244113889e36d83fc02f188e4eabe97cde7031664683cceef34ffa163"
+    },
+    {
+      "path": "examples/demo/manifest.json",
+      "bytes": 919,
+      "sha256": "719c361c8dff75cc673446c720a128516701bc612a051c990baa07051bc72904"
+    },
+    {
+      "path": "examples/review/card.svg",
+      "bytes": 388,
+      "sha256": "1d985b1c17c0043e4aee5c1c1f87a639d1364d3d0291d5173ae78d48d6ea597e"
+    },
+    {
+      "path": "examples/review/manifest.json",
+      "bytes": 741,
+      "sha256": "d03f1d044f6d86df99f692e7b06fecbd2d28e81b87adccd457be82e9db78b440"
+    },
+    {
+      "path": "frameflow/__init__.py",
+      "bytes": 46,
+      "sha256": "df8e7435345c2f1f404ac321e47b763b85f48ebe20328e81f3e721348e4cf688"
+    },
+    {
+      "path": "frameflow/__main__.py",
+      "bytes": 7370,
+      "sha256": "ea8bd157827ceb7e727aca5d38689a980ffc107bba3bef583dd68ae6d93def67"
+    },
+    {
+      "path": "scripts/package.py",
+      "bytes": 2379,
+      "sha256": "aa4dc9603fe800a511c99d2a4f46bf09276b7ae7d9c7efb6a4fa114ea889ee49"
+    },
+    {
+      "path": "templates/workflow.md",
+      "bytes": 3376,
+      "sha256": "ed9a35ddd12700f72d4af58584822880bd96f47079940d3ef9564d5b3d4ef0ea"
+    },
+    {
+      "path": "tests/test_workflow.py",
+      "bytes": 7084,
+      "sha256": "64c17c9bcec1084cb2024eeb17f26c8baf14803dfe01df6509844d1a80089745"
+    }
+  ],
+  "note": "Manifest excludes itself. Integrity inventory is not a quality or security certification."
+}

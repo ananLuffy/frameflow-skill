@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "project_id": "synthetic-card",
+  "mode": "review",
+  "author_id": "fixture-author",
+  "artifacts": [
+    {
+      "id": "card",
+      "path": "card.svg",
+      "sha256": "1d985b1c17c0043e4aee5c1c1f87a639d1364d3d0291d5173ae78d48d6ea597e",
+      "dependencies": []
+    }
+  ],
+  "actions": [
+    {
+      "id": "inspect-card",
+      "kind": "review",
+      "artifact_ids": [
+        "card"
+      ],
+      "status": "pending",
+      "evidence": null,
+      "scope_sha256": null
+    }
+  ],
+  "reviews": [
+    {
+      "id": "visual-review",
+      "reviewer_id": "assigned-reviewer",
+      "artifact_ids": [
+        "card"
+      ],
+      "status": "pending",
+      "evidence": null,
+      "scope_sha256": null
+    }
+  ]
+}
