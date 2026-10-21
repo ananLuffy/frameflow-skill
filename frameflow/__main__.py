@@ -86,6 +86,10 @@ def validate(doc):
     return doc
 
 def checked_file(root, record):
+    # The caller-selected root may have an OS alias; compare canonical paths.
+    # Relative components beneath this root must still never be symlinks.
+    root = root.resolve(strict=True)
+    check(root.is_dir(), "manifest root is not a directory")
     candidate = root
     for component in record['path'].split('/'):
         candidate = candidate / component; check(not candidate.is_symlink(), 'symlink forbidden: ' + record['path'])

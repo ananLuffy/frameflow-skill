@@ -5,7 +5,7 @@ description: Plan, produce, review and repair project-neutral video work from a 
 
 # Frameflow — video production with accountable evidence
 
-This is an initial workflow skill prepared for release, not a video-generation platform. Use it with the owner's chosen editor, renderer, asset tools and reviewers. No backend, model, language, visual style, paid service or publishing destination is implied. Installing this skill does not authorize account access, spending, external transfers or release.
+This is an initial open-source workflow skill, not a video-generation platform. Use it with the owner's chosen editor, renderer, asset tools and reviewers. No backend, model, language, visual style, paid service or publishing destination is implied. Installing this skill does not authorize account access, spending, external transfers or release.
 
 ## 1. Establish the working contract
 

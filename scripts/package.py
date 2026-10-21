@@ -23,7 +23,7 @@ def main():
         content = path.read_bytes()
         data[name] = content
         records.append({'path': name, 'bytes': len(content), 'sha256': hashlib.sha256(content).hexdigest()})
-    data['MANIFEST.json'] = (json.dumps({'format': 1, 'status': 'prepared-for-release-mit',
+    data['MANIFEST.json'] = (json.dumps({'format': 1, 'status': 'v0.1-source-public-mit',
         'files': records, 'note': 'Manifest excludes itself. Integrity inventory is not a quality or security certification.'}, indent=2) + '\n').encode()
     with zipfile.ZipFile(destination, 'w', compression=zipfile.ZIP_DEFLATED) as archive:
         for name, content in sorted(data.items()):

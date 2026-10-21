@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "status": "prepared-for-release-mit",
+  "status": "v0.1-source-public-mit",
   "files": [
     {
       "path": ".gitignore",
@@ -19,13 +19,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 4121,
-      "sha256": "c2ec1d8b78ffca20833dbd5076777018d921c4d33ce2283fe422d068873909fc"
+      "bytes": 4180,
+      "sha256": "62fceda48dc1ce7e5828b9e995c7641350e533f06dc3a65cf2b885e406cb554e"
     },
     {
       "path": "RELEASE.md",
-      "bytes": 1201,
-      "sha256": "7a8fd46aab208b1f15c678bd254590036457015d79d3964fcac5cf37d7f28b87"
+      "bytes": 1724,
+      "sha256": "3aa721840f125f4d49c05e13a08e4c7ca5ccbb758d09222169ef2d519b070e19"
     },
     {
       "path": "SECURITY.md",
@@ -34,8 +34,8 @@
     },
     {
       "path": "SKILL.md",
-      "bytes": 8913,
-      "sha256": "ef217d575983e27ccc09315e4da556790eabb69db531b9d03a4e928df19d8665"
+      "bytes": 8904,
+      "sha256": "01e67fb460cf63899746d62be4f56b97aa937e251b65c138941393486f8fd642"
     },
     {
       "path": "docs/adapters.md",
@@ -44,8 +44,8 @@
     },
     {
       "path": "docs/architecture.md",
-      "bytes": 2912,
-      "sha256": "b48f43df589835cc6b151d1bfe392fafef568a3bb24b501b742e84fd4c28f875"
+      "bytes": 3078,
+      "sha256": "8f6dac96ea058e4d7ca3dd1ab55accc6f0d808f78e601cf66c9731dc8307e14d"
     },
     {
       "path": "examples/demo/assets/story.txt",
@@ -74,13 +74,13 @@
     },
     {
       "path": "frameflow/__main__.py",
-      "bytes": 7370,
-      "sha256": "ea8bd157827ceb7e727aca5d38689a980ffc107bba3bef583dd68ae6d93def67"
+      "bytes": 7620,
+      "sha256": "9d8cc3ed57b1009d3659a91d169273eb318f1916cace1be5f7803e5b070662bb"
     },
     {
       "path": "scripts/package.py",
-      "bytes": 2379,
-      "sha256": "aa4dc9603fe800a511c99d2a4f46bf09276b7ae7d9c7efb6a4fa114ea889ee49"
+      "bytes": 2377,
+      "sha256": "5776d4c61fb926682f8e144f22a27e820ecc47132890748c6e2b190d2b679055"
     },
     {
       "path": "templates/workflow.md",
@@ -89,8 +89,8 @@
     },
     {
       "path": "tests/test_workflow.py",
-      "bytes": 7084,
-      "sha256": "64c17c9bcec1084cb2024eeb17f26c8baf14803dfe01df6509844d1a80089745"
+      "bytes": 8495,
+      "sha256": "ab476f8aed037c52e3558daa5f167a16d022fc12f3d2832835aec297737aa17e"
     }
   ],
   "note": "Manifest excludes itself. Integrity inventory is not a quality or security certification."

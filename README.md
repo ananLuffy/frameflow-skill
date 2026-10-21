@@ -58,16 +58,17 @@ See [architecture](docs/architecture.md), [security](SECURITY.md),
 
 ## 中文说明
 
-这是尚未公开的初版：通用视频制作工作流 Skill + 本地证据检查工具，
+这是已公开的 v0.1 初始源码：通用视频制作工作流 Skill + 本地证据检查工具，
 不是自动制片平台，不包含原项目素材、音色、账号或私有接口。
 工作流覆盖策划、故事、导演、资产、动画、剪辑、声音、独立审查与交付；
 工具只验证结构、文件哈希和已登记义务，不能证明艺术质量或真实独立审查。
 模型、供应商、语言、风格、预算及权限由各项目自行配置。
-运行上方四条命令即可检查纯合成示例及测试。采用 MIT 许可证；当前发行包已准备，远端发布状态须以实际仓库为准。
+运行上方四条命令即可检查纯合成示例及测试。采用 MIT 许可证；源码仓库已公开；不代表已发布到软件包索引或提交任何申请。
 
 ## License and release status
 
 Original code and documentation are provided under the [MIT License](LICENSE).
-This initial package is **prepared for release**; this document does not claim
-that a remote repository, package-index release or application submission exists.
+The **v0.1 initial source** is public at
+[ananLuffy/frameflow-skill](https://github.com/ananLuffy/frameflow-skill).
+This is source publication, not a package-index release or application submission.
 See [release notes](RELEASE.md). No third-party production assets are included.

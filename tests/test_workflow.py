@@ -106,6 +106,33 @@ class WorkflowTests(unittest.TestCase):
     def test_symlink_directory(self):
         (self.root/'dir').symlink_to(self.root,target_is_directory=True); self.asset['path']='dir/asset.txt'
         with self.assertRaises(Invalid): verify(validate(self.doc),self.root)
+    def make_root_alias(self):
+        temp = tempfile.TemporaryDirectory()
+        self.addCleanup(temp.cleanup)
+        alias = pathlib.Path(temp.name) / 'root-alias'
+        alias.symlink_to(self.root.resolve(), target_is_directory=True)
+        return alias
+    def test_root_alias_helper(self):
+        self.finish()
+        verify(validate(self.doc), self.make_root_alias())
+    def test_root_alias_cli(self):
+        alias = self.make_root_alias()
+        (self.root/'manifest.json').write_text(json.dumps(self.doc))
+        p = subprocess.run([sys.executable, '-m', 'frameflow', 'verify', str(alias/'manifest.json')], cwd=ROOT, capture_output=True, text=True)
+        self.assertEqual(p.returncode, 0, p.stderr)
+        self.assertEqual(json.loads(p.stdout)['state'], 'VERIFIED_BYTES')
+    def test_root_alias_still_rejects_internal_symlink(self):
+        alias = self.make_root_alias()
+        (self.root/'link').symlink_to(self.root/'asset.txt')
+        self.asset['path'] = 'link'
+        with self.assertRaises(Invalid): verify(validate(self.doc), alias)
+    def test_root_alias_still_rejects_escape(self):
+        alias = self.make_root_alias()
+        outside = alias.parent/'outside.txt'
+        outside.write_text('synthetic asset')
+        (self.root/'escape').symlink_to(outside)
+        self.asset['path'] = 'escape'
+        with self.assertRaises(Invalid): verify(validate(self.doc), alias)
     def test_missing_file(self):
         (self.root/'asset.txt').unlink()
         with self.assertRaises(Invalid): verify(validate(self.doc),self.root)

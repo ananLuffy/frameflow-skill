@@ -4,7 +4,9 @@ Schema version 1 uses exact keys; unknown fields are errors. See the synthetic
 example for canonical JSON. Identifiers are 1–80 ASCII letters/digits/._- (first
 character alphanumeric); hashes are lowercase SHA-256; paths are relative POSIX
 paths under the manifest directory. Duplicate JSON keys/IDs/references, dependency
-cycles, parent traversal and symbolic-link files/components are rejected.
+cycles, parent traversal and symbolic-link files/components beneath the chosen
+root are rejected. The caller-selected root is canonicalized first so operating-
+system root aliases work consistently; this does not permit symlinks inside it.
 
 An artifact is `{id,path,sha256,dependencies}`. Dependencies are artifact IDs.
 An action is `{id,kind,artifact_ids,status,evidence,scope_sha256}`. Kinds equal
